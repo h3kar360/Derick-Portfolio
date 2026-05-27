@@ -1,14 +1,28 @@
 import { useState } from "react";
-import "./App.css";
+import {
+    Route,
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/HomePage";
 
-function App() {
+const App = () => {
+    // place a router for future routes and scaling
+    const router = createBrowserRouter(
+        createRoutesFromElements(
+            <Route path="/" element={<MainLayout />}>
+                <Route index element={<HomePage />} />
+            </Route>,
+        ),
+    );
+
     return (
         <>
-            <section id="spacer">
-                <div className="text-3xl text-amber-200">waddup</div>
-            </section>
+            <RouterProvider router={router} />
         </>
     );
-}
+};
 
 export default App;
