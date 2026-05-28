@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Github from "../../assets/logos/github-light.svg";
 import Linkedin from "../../assets/logos/linkedin-icon.svg";

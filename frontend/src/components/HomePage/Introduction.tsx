@@ -1,4 +1,3 @@
-import React from "react";
 import derickPp from "../../assets/derick-pp.jpeg";
 
 const Introduction = () => {

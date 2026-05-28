@@ -1,5 +1,3 @@
-import React from "react";
-
 const Experience = () => {
     return (
         <section className="mt-30" id="main-body">

@@ -1,4 +1,3 @@
-import React from "react";
 import Java from "../../assets/logos/Java.svg";
 import JavaScript from "../../assets/logos/JavaScript.svg";
 import TypeScript from "../../assets/logos/TypeScript.svg";
