@@ -17,7 +17,7 @@ import GitHub from "../../assets/logos/GitHub.svg";
 
 const Skills = () => {
     return (
-        <div>
+        <section className="mt-30">
             <div id="skills" className="text-4xl mb-10">
                 Skills
             </div>
@@ -173,7 +173,7 @@ const Skills = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
     );
 };
 
