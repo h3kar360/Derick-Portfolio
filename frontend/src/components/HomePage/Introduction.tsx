@@ -3,7 +3,10 @@ import derickPp from "../../assets/derick-pp.jpeg";
 
 const Introduction = () => {
     return (
-        <section className="w-full h-screen flex justify-evenly items-center">
+        <section
+            className="w-full h-screen flex justify-evenly items-center"
+            id="home"
+        >
             <div>
                 <p className="text-6xl">Hi, I'm Derick</p>
                 <p className="text-2xl">

@@ -8,9 +8,13 @@ const Navbar = () => {
                 <a href="#skills">Skills</a>
                 <a href="#projects">Project</a>
                 <a href="#experience">Experience</a>
-                <button className="bg-green-400 px-3 py-1.5 rounded-xl hover:bg-green-300">
+                <a
+                    href="/files/Resume-Derick.pdf"
+                    target="_blank"
+                    className="bg-green-400 px-3 py-1.5 rounded-xl hover:bg-green-300"
+                >
                     Resume
-                </button>
+                </a>
             </div>
         </nav>
     );
