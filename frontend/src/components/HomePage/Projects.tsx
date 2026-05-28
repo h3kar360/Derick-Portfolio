@@ -3,7 +3,7 @@ import Github from "../../assets/logos/GitHub.svg";
 
 const Projects = () => {
     return (
-        <section className="mt-30">
+        <section className="mt-30" id="main-body">
             <div id="projects" className="text-4xl mb-10">
                 Projects
             </div>

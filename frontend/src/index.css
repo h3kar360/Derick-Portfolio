@@ -5,7 +5,7 @@ html {
     font-family: monospace;
 }
 
-body {
+#main-body {
     margin-left: 4rem;
     margin-right: 4rem;
 }

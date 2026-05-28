@@ -17,7 +17,7 @@ import GitHub from "../../assets/logos/GitHub.svg";
 
 const Skills = () => {
     return (
-        <section className="mt-30">
+        <section className="mt-30" id="main-body">
             <div id="skills" className="text-4xl mb-10">
                 Skills
             </div>
