@@ -4,3 +4,8 @@ html {
     scroll-behavior: smooth;
     font-family: monospace;
 }
+
+#main-body {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
