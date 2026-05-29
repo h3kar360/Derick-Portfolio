@@ -41,7 +41,7 @@ const Navbar = () => {
                     ${isOpen ? "translate-y-0" : "-translate-y-full"}
                 `}
                 >
-                    <div className="flex flex-col justify-center items-center gap-6 h-screen">
+                    <div className="flex flex-col justify-center items-center gap-6 min-h-dvh">
                         <a
                             href="#"
                             onClick={() => setIsOpen(false)}
