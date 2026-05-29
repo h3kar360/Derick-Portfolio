@@ -49,8 +49,8 @@ const Projects = () => {
 
     const statusStyle = (status: boolean): string => {
         return status
-            ? "bg-green-500 h-3 w-3 rounded-full -z-10"
-            : "bg-red-500 h-3 w-3 rounded-full -z-10";
+            ? "bg-green-500 h-3 w-3 rounded-full flex-shrink-0 -z-10"
+            : "bg-red-500 h-3 w-3 rounded-full flex-shrink-0 -z-10";
     };
 
     return (
@@ -85,7 +85,11 @@ const Projects = () => {
                         >
                             {project.link}
                         </a>
-                        <a href={project.github} target="_blank">
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            className="shrink-0"
+                        >
                             <img
                                 src={Github}
                                 alt="Github"
@@ -110,7 +114,7 @@ const Projects = () => {
                                     {project.status_desc}
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-2">
+                            <div className="flex flex-col gap-2 w-80">
                                 <div className="text-xl">{project.name}</div>
                                 <a
                                     href={project.link}
@@ -121,7 +125,11 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
-                        <a href={project.github} target="_blank">
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            className="shrink-0"
+                        >
                             <img
                                 src={Github}
                                 alt="Github"
