@@ -61,7 +61,7 @@ const Projects = () => {
 
             {/* desktop */}
             <section className="hidden md:block">
-                {projects.map((project: Project, index: number) => (
+                {projects.map((project: Project) => (
                     <div className="border-t-2 lg:px-10 lg:py-8 flex items-center justify-between w-full">
                         <div className="flex justify-evenly items-center lg:gap-10">
                             <div className="relative group">
@@ -98,7 +98,7 @@ const Projects = () => {
 
             {/* mobile */}
             <section className="block md:hidden">
-                {projects.map((project: Project, index: number) => (
+                {projects.map((project: Project) => (
                     <div className="border-t-2 px-5 py-2 flex items-center justify-between w-full">
                         <div className="flex justify-evenly items-center gap-10">
                             <div className={statusStyle(project.status)}>

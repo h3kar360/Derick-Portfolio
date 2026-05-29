@@ -44,7 +44,7 @@ const Skills = () => {
                 Skills
             </div>
             <section className="grid lg:grid-cols-15 grid-cols-5 gap-5">
-                {skills.map((skill: Skill, index: number) => (
+                {skills.map((skill: Skill) => (
                     <div className="relative group w-15 h-15">
                         <div className="w-full h-full">
                             <img
