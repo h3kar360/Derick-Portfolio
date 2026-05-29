@@ -114,7 +114,7 @@ const Projects = () => {
                                     {project.status_desc}
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-2 w-80">
+                            <div className="flex flex-col gap-2 w-60">
                                 <div className="text-xl">{project.name}</div>
                                 <a
                                     href={project.link}
