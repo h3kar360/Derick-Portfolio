@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Github from "../../assets/logos/github-light.svg";
 import Linkedin from "../../assets/logos/linkedin-icon.svg";
@@ -6,9 +6,12 @@ import Instagram from "../../assets/logos/instagram-icon.svg";
 
 const Contacts = () => {
     const form = useRef<HTMLFormElement>(null);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
+
+        setIsSubmitting(true);
 
         emailjs
             .sendForm(
@@ -22,10 +25,12 @@ const Contacts = () => {
             .then(
                 () => {
                     console.log("SUCCESS!");
+                    setIsSubmitting(false);
                     alert("Successfully send email");
                 },
                 (error) => {
                     console.log("FAILED...", error.text);
+                    setIsSubmitting(false);
                     alert("Email failed to send");
                 },
             );
@@ -71,6 +76,7 @@ const Contacts = () => {
                             <button
                                 type="submit"
                                 className="text-white border-2 rounded-2xl py-3 hover:bg-gray-400"
+                                disabled={isSubmitting}
                             >
                                 Send
                             </button>
