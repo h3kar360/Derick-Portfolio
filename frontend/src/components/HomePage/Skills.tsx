@@ -13,6 +13,8 @@ import Mongodb from "../../assets/logos/MongoDB.svg";
 import Supabase from "../../assets/logos/supabase.svg";
 import Git from "../../assets/logos/Git.svg";
 import GitHub from "../../assets/logos/GitHub.svg";
+import NestJs from "../../assets/logos/nestjs.svg";
+import Postgre from "../../assets/logos/postgresql.svg";
 
 interface Skill {
     name: string;
@@ -31,7 +33,9 @@ const Skills = () => {
         { name: "Express", icon: Express },
         { name: "React", icon: ReactJS },
         { name: "Next", icon: Next },
+        { name: "NestJS", icon: NestJs },
         { name: "Tailwind CSS", icon: Tailwind },
+        { name: "PostgreSQL", icon: Postgre },
         { name: "MongoDB", icon: Mongodb },
         { name: "Supabase", icon: Supabase },
         { name: "Git", icon: Git },
@@ -43,9 +47,9 @@ const Skills = () => {
             <div id="skills" className="text-4xl mb-10">
                 Skills
             </div>
-            <section className="grid lg:grid-cols-15 grid-cols-5 gap-5">
+            <section className="grid lg:grid-cols-10 grid-cols-5 gap-10">
                 {skills.map((skill: Skill) => (
-                    <div className="relative group w-15 h-15">
+                    <div className="relative group w-18 h-18">
                         <div className="w-full h-full">
                             <img
                                 src={skill.icon}
