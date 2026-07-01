@@ -15,6 +15,7 @@ import Git from "../../assets/logos/Git.svg";
 import GitHub from "../../assets/logos/GitHub.svg";
 import NestJs from "../../assets/logos/nestjs.svg";
 import Postgre from "../../assets/logos/postgresql.svg";
+import SpringBoot from "../../assets/logos/spring-icon.svg";
 
 interface Skill {
     name: string;
@@ -29,6 +30,7 @@ const Skills = () => {
         { name: "Python", icon: Python },
         { name: "HTML", icon: HTML5 },
         { name: "CSS", icon: CSS },
+        { name: "Spring Boot", icon: SpringBoot },
         { name: "NodeJS", icon: Node },
         { name: "Express", icon: Express },
         { name: "React", icon: ReactJS },
