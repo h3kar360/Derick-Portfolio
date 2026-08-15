@@ -16,61 +16,63 @@ import GitHub from "../../assets/logos/GitHub.svg";
 import NestJs from "../../assets/logos/nestjs.svg";
 import Postgre from "../../assets/logos/postgresql.svg";
 import SpringBoot from "../../assets/logos/spring-icon.svg";
+import Docker from "../../assets/logos/Docker.svg";
 
 interface Skill {
-    name: string;
-    icon: string;
+  name: string;
+  icon: string;
 }
 
 const Skills = () => {
-    const skills: Skill[] = [
-        { name: "Java", icon: Java },
-        { name: "JavaScript", icon: JavaScript },
-        { name: "TypeScript", icon: TypeScript },
-        { name: "Python", icon: Python },
-        { name: "HTML", icon: HTML5 },
-        { name: "CSS", icon: CSS },
-        { name: "Spring Boot", icon: SpringBoot },
-        { name: "NodeJS", icon: Node },
-        { name: "Express", icon: Express },
-        { name: "React", icon: ReactJS },
-        { name: "Next", icon: Next },
-        { name: "NestJS", icon: NestJs },
-        { name: "Tailwind CSS", icon: Tailwind },
-        { name: "PostgreSQL", icon: Postgre },
-        { name: "MongoDB", icon: Mongodb },
-        { name: "Supabase", icon: Supabase },
-        { name: "Git", icon: Git },
-        { name: "GitHub", icon: GitHub },
-    ];
+  const skills: Skill[] = [
+    { name: "Java", icon: Java },
+    { name: "JavaScript", icon: JavaScript },
+    { name: "TypeScript", icon: TypeScript },
+    { name: "Python", icon: Python },
+    { name: "HTML", icon: HTML5 },
+    { name: "CSS", icon: CSS },
+    { name: "Spring Boot", icon: SpringBoot },
+    { name: "NodeJS", icon: Node },
+    { name: "Express", icon: Express },
+    { name: "React", icon: ReactJS },
+    { name: "Next", icon: Next },
+    { name: "NestJS", icon: NestJs },
+    { name: "Tailwind CSS", icon: Tailwind },
+    { name: "PostgreSQL", icon: Postgre },
+    { name: "MongoDB", icon: Mongodb },
+    { name: "Supabase", icon: Supabase },
+    { name: "Git", icon: Git },
+    { name: "GitHub", icon: GitHub },
+    { name: "Docker", icon: Docker },
+  ];
 
-    return (
-        <section className="mt-30" id="main-body">
-            <div id="skills" className="text-4xl mb-10">
-                Skills
+  return (
+    <section className="mt-30" id="main-body">
+      <div id="skills" className="text-4xl mb-10">
+        Skills
+      </div>
+      <section className="grid lg:grid-cols-10 grid-cols-5 gap-10">
+        {skills.map((skill: Skill) => (
+          <div className="relative group w-18 h-18">
+            <div className="w-full h-full">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-full h-full object-contain"
+              />
             </div>
-            <section className="grid lg:grid-cols-10 grid-cols-5 gap-10">
-                {skills.map((skill: Skill) => (
-                    <div className="relative group w-18 h-18">
-                        <div className="w-full h-full">
-                            <img
-                                src={skill.icon}
-                                alt={skill.name}
-                                className="w-full h-full object-contain"
-                            />
-                        </div>
-                        <div
-                            className="absolute bottom--10 left-1/2 transform -translate-x-1/2 bg-black text-white p-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible
+            <div
+              className="absolute bottom--10 left-1/2 transform -translate-x-1/2 bg-black text-white p-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible
                                         transition-all duration-200 whitespace-nowrap
                                         backdrop-blur-sm"
-                        >
-                            {skill.name}
-                        </div>
-                    </div>
-                ))}
-            </section>
-        </section>
-    );
+            >
+              {skill.name}
+            </div>
+          </div>
+        ))}
+      </section>
+    </section>
+  );
 };
 
 export default Skills;
