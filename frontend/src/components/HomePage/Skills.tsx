@@ -17,6 +17,7 @@ import NestJs from "../../assets/logos/nestjs.svg";
 import Postgre from "../../assets/logos/postgresql.svg";
 import SpringBoot from "../../assets/logos/spring-icon.svg";
 import Docker from "../../assets/logos/Docker.svg";
+import Redis from "../../assets/logos/Redis.svg";
 
 interface Skill {
   name: string;
@@ -44,6 +45,7 @@ const Skills = () => {
     { name: "Git", icon: Git },
     { name: "GitHub", icon: GitHub },
     { name: "Docker", icon: Docker },
+    { name: "Redis", icon: Redis },
   ];
 
   return (
