@@ -19,7 +19,7 @@ const Projects = () => {
         },
         {
             name: "API Proxy",
-            link: "https://multi-tenant-api-proxy-gateway-topaz.vercel.app",
+            link: "https://proxier-tali.vercel.app",
             github: "https://github.com/h3kar360/Multi-Tenant-API-Proxy-Gateway",
             status: true,
             status_desc: "online (live)",
